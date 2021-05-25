@@ -39,6 +39,7 @@ public class CartManager {
     int index = 0;
     for (PurchaseItem item : items) {
       if (item.getId() != id) {
+        if(tmp.length == index) return;
         tmp[index] = item;
         index++;
       }
